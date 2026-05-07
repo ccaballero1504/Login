@@ -40,12 +40,12 @@ public class Main {
 
             if(con!=null){
                 String usuario;
-                int contrasenia, permisos=0;
+                String contrasenia;
+                int permisos=0;
                 System.out.print("USUARIO: ");
                 usuario = teclado.nextLine();
                 System.out.print("CONTRASEÑA: ");
-                contrasenia = teclado.nextInt();
-                teclado.nextLine();
+                contrasenia = teclado.nextLine();
                 user = new Usuario(usuario, contrasenia);
                 if(user.comprobar(con)){
                     do{
